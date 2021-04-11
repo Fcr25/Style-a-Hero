@@ -42,9 +42,9 @@
 
 .gradient-border {
     border-top: 6px solid #fff;
-    border-bottom: 0px transparent;
+/*     border-bottom: 0px transparent;
     border-left: 0px transparent;
-    border-right: 0px transparent;
+    border-right: 0px transparent; */
     padding: 0 4em;
     border-image-slice: 1;
     border-image-source: linear-gradient(to right,#FE3703,#FEA30F);
