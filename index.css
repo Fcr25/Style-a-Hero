@@ -1,0 +1,75 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: none;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: Ubuntu, sans-serif;
+    color: #fff;
+}
+    
+.hero::before {
+    content: "";
+    background-size: cover; 
+    background-position: center;
+    background-image: url(/images/photographer.jpg);
+    background-color: rgba(50,38,3,.3);
+    background-blend-mode: overlay;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gradient-border {
+    border-top: 6px solid #FE3703;
+    padding: 0 4em;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right,#FE3703,#FEA30F);
+}
+
+.site-title {
+    font-weight: 300;
+}
+strong,
+.btn {
+    font-weight: 700;
+}
+
+.btn {
+    font-family: inherit;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1em 4em;
+    border-radius: 6px;
+    background-image: linear-gradient(to right,#FE3703,#FEA30F); 
+}
+
+.btn:hover,
+.btn:focus {
+    /* clue below  */
+    filter: invert(100%);
+}
+
+.hidden {
+    display: none;
+}
